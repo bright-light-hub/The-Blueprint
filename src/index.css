@@ -1,0 +1,31 @@
+@keyframes float {
+  0% { transform: translateY(0); opacity: 0.5; }
+  50% { transform: translateY(-20px); opacity: 1; }
+  100% { transform: translateY(0); opacity: 0.5; }
+}
+
+.animate-float {
+  animation: float infinite alternate ease-in-out;
+}
+
+
+
+
+@keyframes rocket {
+  0% { transform: translate(0, 0) rotate(0deg); opacity: 1; }
+  100% { transform: translate(100vw, -100vh) rotate(30deg); opacity: 0; }
+}
+
+@keyframes smoke {
+  0% { opacity: 1; transform: scale(0.8); }
+  100% { opacity: 0; transform: scale(2); }
+}
+
+.animate-rocket {
+  animation: rocket 5s ease-in-out forwards;
+}
+
+.animate-smoke {
+  animation: smoke 2s ease-out forwards;
+}
+
